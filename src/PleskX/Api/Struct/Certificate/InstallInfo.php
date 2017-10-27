@@ -6,10 +6,7 @@ namespace PleskX\Api\Struct\Certificate;
 class InstallInfo extends \PleskX\Api\Struct
 {
     /** @var string */
-    public $request;
-
-    /** @var string */
-    public $privateKey;
+    public $status;
 
     public function __construct($apiResponse)
     {
