@@ -26,7 +26,7 @@ class Certificate extends \PleskX\Api\Operator
 
 	/**
 	 * @param $properties
-	 * @return Struct\Info
+	 * @return Struct\InstallInfo
 	 */
 	public function install($properties)
 	{
@@ -48,6 +48,6 @@ class Certificate extends \PleskX\Api\Operator
 		}
 
 		$response = $this->_client->request($packet);
-		return new Struct\Info($response);
+		return new Struct\InstallInfo($response);
     }
-s}
+}
