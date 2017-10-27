@@ -35,10 +35,10 @@ class Certificate extends \PleskX\Api\Operator
 
 		foreach ($properties as $name => $value) {
 			if ($name == 'content') {
-				$content = $install->addChild($name, $value);
+				$content = $install->addChild('content');
 
 				foreach ($value as $contentKey => $contentValue) {
-					$content->addChild($name, $value);
+					$content->addChild($contentKey, $contentValue);
 				}
 
 				continue;
